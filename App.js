@@ -2,7 +2,7 @@ import React from "react";
 import { AppLoading } from "expo";
 import * as Font from "expo-font";
 import { Ionicons } from "@expo/vector-icons";
-import HomeScreen from "./src/screens/HomeScreen";
+import AppNavigator from "./src/AppNavigator";
 
 export default class App extends React.Component {
   constructor(props) {
@@ -26,6 +26,6 @@ export default class App extends React.Component {
       return <AppLoading />;
     }
 
-    return <HomeScreen />;
+    return <AppNavigator />;
   }
 }
